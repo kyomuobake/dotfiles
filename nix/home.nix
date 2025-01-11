@@ -6,6 +6,8 @@
     fd
     jq
     vscode
+    yabai
+    skhd
   ];
 
   # ユーザー情報
