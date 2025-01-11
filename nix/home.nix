@@ -20,4 +20,13 @@
 
   # home-managerの有効化
   programs.home-manager.enable = true;
+
+  # VSCode の設定
+  programs.vscode = {
+    enable = true;
+    extensions = with pkgs.vscode-extensions; [
+      vscodevim.vim
+      eamodio.gitlens
+    ];
+  };
 }
