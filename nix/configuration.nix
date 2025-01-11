@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    dotnet-sdk_9
   ];
 
   # Nixデーモンの自動アップグレードを有効化
@@ -82,6 +83,9 @@
     # システムの応答が速く感じられ、特に低スペックのマシンで有用です。
     launchanim = false;
   };
+
+  # キーボード長押しの設定
+  system.defaults.NSGlobalDomain.ApplePressAndHoldEnabled = false;
 
   # 下位互換性のため（変更時はchangelogを確認）
   system.stateVersion = 4;
